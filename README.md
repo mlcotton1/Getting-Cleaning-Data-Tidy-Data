@@ -20,8 +20,8 @@ The purpose of this project is to demonstrate your ability to collect, work with
 2. Download the compressed raw data (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 3. Unzip the raw data in the UCI HAR Dataset to your cloned repositorys' root directory
 4. Run the 'run_analysis.R'
-  a. Dependent on having the plyr package installed
-  b. Dependent on resetting your working directory to your repository root directory 
+  Dependent on having the plyr package installed
+  Dependent on resetting your working directory to your repository root directory 
 
 
   
