@@ -5,9 +5,9 @@ Course Project for Getting & Cleaing Data from Coursera March 2015
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set.
 
 ##Getting-Cleaning-Data-Tidy-Data Repository Contains:
-*CodeBook.md
-  *The CodeBook is a markdown file
-  *This file contains detailed information about the source data, project requirements and variables used
+1. CodeBook.md
+   The CodeBook is a markdown file
+   This file contains detailed information about the source data, project requirements and variables used
 *README.md
   +The README is a markdown file
   +This file contains information about the repository and steps needed to duplicate the results using the specified R script
