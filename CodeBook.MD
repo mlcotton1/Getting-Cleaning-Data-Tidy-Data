@@ -4,7 +4,6 @@ author: "Michelle Cotton"
 date: "Saturday, March 21, 2015"
 output: pdf_document
 ---
----
 ##Project Purpose
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set.
 
@@ -92,4 +91,4 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 * Stores the average for each activity and each subject
   - averages_data
 * Writes a table in a text format called averages_data
----
+
