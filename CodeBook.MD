@@ -17,79 +17,79 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 
 **For each record it is provided:**
-*Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
-*Triaxial Angular velocity from the gyroscope. 
-*A 561-feature vector with time and frequency domain variables. 
-*Its activity label. 
-*An identifier of the subject who carried out the experiment.
+* Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+* Triaxial Angular velocity from the gyroscope. 
+* A 561-feature vector with time and frequency domain variables. 
+* Its activity label. 
+* An identifier of the subject who carried out the experiment.
 
 **The dataset includes the following files:**
-*README.txt
-*features_info.txt
-  +Shows information about the variables used on the feature vector
-*features.txt
-  +List of all features
-*activity_labels.txt
-  +Links the class labels with their activity name
-*train/X_train.txt
-  +Training set
-*train/y_train.txt
-  +Training labels
-*test/X_test.txt
-  +Test set
-*test/y_test.txt
-  +Test labels
+* README.txt
+* features_info.txt
+  - Shows information about the variables used on the feature vector
+* features.txt
+  - List of all features
+* activity_labels.txt
+  - Links the class labels with their activity name
+* train/X_train.txt
+  - Training set
+* train/y_train.txt
+  - Training labels
+* test/X_test.txt
+  - Test set
+* test/y_test.txt
+  - Test labels
 
 **The following files are available for the train and test data. Their descriptions are equivalent.** 
-*train/subject_train.txt
-  +Each row identifies the subject who performed the activity for each window sample. 
-  +Its range is from 1 to 30
-*train/Inertial Signals/total_acc_x_train.txt
-  +The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'
-  +Every row shows a 128 element vector 
-  +The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
-*train/Inertial Signals/body_acc_x_train.txt
-  +The body acceleration signal obtained by subtracting the gravity from the total acceleration
-*train/Inertial Signals/body_gyro_x_train.txt
-  +The angular velocity vector measured by the gyroscope for each window sample
-  +The units are radians/second
+* train/subject_train.txt
+  - Each row identifies the subject who performed the activity for each window sample. 
+  - Its range is from 1 to 30
+* train/Inertial Signals/total_acc_x_train.txt
+  - The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'
+  - Every row shows a 128 element vector 
+  - The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
+* train/Inertial Signals/body_acc_x_train.txt
+  - The body acceleration signal obtained by subtracting the gravity from the total acceleration
+* train/Inertial Signals/body_gyro_x_train.txt
+  - The angular velocity vector measured by the gyroscope for each window sample
+  - The units are radians/second
 
 **Notes:** 
-*Features are normalized and bounded within [-1,1]
-*Each feature vector is a row on the text file
+* Features are normalized and bounded within [-1,1]
+* Each feature vector is a row on the text file
 
 ##Variables
 **Section 1: Merges the training and test sets to create one data set**
-*Table of the corresponding axis variable information for either train or test data
-  +x_train
-  +y_train
-  +x_test
-  +y_test
-*Identifies the subject who participated in the activity for each sample
-  +train_data
-  +test_data
-*Compilation of corresponding axis variable for both train and test data
-  +x_data
-  +y_data
-*Compilation of subjects who participated in any acivities for each sample
-  +data
+* Table of the corresponding axis variable information for either train or test data
+  - x_train
+  - y_train
+  - x_test
+  - y_test
+* Identifies the subject who participated in the activity for each sample
+  - train_data
+  - test_data
+* Compilation of corresponding axis variable for both train and test data
+  - x_data
+  - y_data
+* Compilation of subjects who participated in any acivities for each sample
+  - data
   
 **Section 2: Extracts only the measurements on the mean and standard deviation for each measurement.**
-*Reads and stores the variables from the features.txt document
-  +features
-*Holds only our desired features (i.e. mean and standard deviation)
-  +desired_features
+* Reads and stores the variables from the features.txt document
+  - features
+* Holds only our desired features (i.e. mean and standard deviation)
+  - desired_features
 
 **Section 3: Uses descriptive activity names to name the activities in the data set**
-*Reads and stores the activity names from the activity_labels.txt document
-  +activities
+* Reads and stores the activity names from the activity_labels.txt document
+  - activities
   
 **Section 4: Appropriately labels the data set with descriptive variable names **
-*Use of the cbind function to add the activity and features headings to the compiled data from Section 1
-  +full_data
+* Use of the cbind function to add the activity and features headings to the compiled data from Section 1
+  - full_data
   
 **Section 5: From the data set in Section 4; create a second, independent tidy data set with the  average of each variable for each activity and each subject.**
-*Stores the average for each activity and each subject
-  +averages_data
-*Writes a table in a text format called averages_data
+* Stores the average for each activity and each subject
+  - averages_data
+* Writes a table in a text format called averages_data
 ---
